@@ -1,0 +1,9 @@
+body {
+    background-color: lightgrey;
+    color:black
+}
+
+p {
+    text-align:left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
