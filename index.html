@@ -1,16 +1,772 @@
-<!dOcTyPe hTmL> 
-<!--fun fact did you know that the above line is not case sensitive -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aiden Shi — Data Science, Robotics &amp; Computational Research</title>
+  <meta
+    name="description"
+    content="Personal portfolio of Aiden Shi, UC Berkeley undergraduate studying Data Science and Statistics with experience in UAV trajectory optimization, statistical modeling, computer vision, and computational biology."
+  />
 
-<link rel = "stylesheet" href = "test.css">
+  <!-- Fonts (graceful system fallbacks included in styles.css) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,400&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-<html>
+  <!-- Header & Navigation -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="#top" class="brand" aria-label="Aiden Shi Home">
+        <span class="brand-mark" aria-hidden="true">AS</span>
+        <span class="brand-name">Aiden Shi</span>
+      </a>
 
-    <h1> Aiden Shi's Website!</h1>
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#education">Education</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#leadership">Leadership</a></li>
+          <li><a href="#community">Community</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#ai-disclosure">AI Disclosure</a></li>
+        </ul>
+      </nav>
 
-    <body>
+      <div class="nav-actions">
+        <button
+          type="button"
+          class="icon-btn"
+          id="theme-toggle"
+          aria-label="Toggle color theme"
+          title="Toggle light/dark mode"
+        >
+          <svg id="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"></path>
+          </svg>
+          <svg id="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display: none;">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
 
-        <p>very much a work in progress right now</p>
-        <p>anyways <a href = "https://docs.google.com/document/d/1JLSjXjeIoF4tfOnxto8AP6AISYp0YsJ3">here's my resume</a></p>
+        <button
+          type="button"
+          class="icon-btn menu-toggle"
+          id="menu-toggle"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
 
-    </body>
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div>
+          <div class="hero-eyebrow">
+            <span class="hero-dot" aria-hidden="true"></span>
+            UC Berkeley &middot; B.A. Data Science &rsquo;30
+          </div>
+          <h1 class="hero-title">Aiden Shi</h1>
+          <p class="hero-summary">
+            UC Berkeley undergraduate studying data science and statistics, with hands-on
+            experience in statistical modeling, computer vision, and computational biology.
+            Passionate about applying quantitative methods to interdisciplinary challenges,
+            particularly in robotics and computer vision.
+          </p>
+
+          <div class="hero-meta">
+            <span class="hero-meta-item">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              Berkeley, CA
+            </span>
+            <span class="hero-meta-item">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <a href="mailto:shiaiden@gmail.com">shiaiden@gmail.com</a>
+            </span>
+          </div>
+
+          <div class="hero-actions">
+            <a href="mailto:shiaiden@gmail.com" class="btn btn-primary">Get in Touch</a>
+            <a
+              href="https://github.com/aiden9400"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-secondary"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/aiden-shi-44a15243b/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-secondary"
+            >
+              LinkedIn
+            </a>
+            <button type="button" class="btn btn-secondary" onclick="window.print()">
+              Print / Save PDF
+            </button>
+          </div>
+        </div>
+
+        <!-- Subtle Thematic Illustration: Waypoint Trajectory Optimization -->
+        <aside class="hero-visual" aria-label="Illustration of UAV waypoint trajectory optimization">
+          <div class="visual-header">
+            <span>FIG 01 // WAYPOINT TRAJECTORY</span>
+            <span class="visual-tag">UAVs@Berkeley</span>
+          </div>
+          <svg
+            class="trajectory-svg"
+            viewBox="0 0 420 260"
+            role="img"
+            aria-label="Diagram comparing a smooth minimum-time optimized flight trajectory with a piecewise point-to-point PID path across five waypoints"
+          >
+            <!-- Subtle Coordinate Grid -->
+            <g stroke="currentColor" stroke-opacity="0.08" stroke-width="1">
+              <line x1="60" y1="20" x2="60" y2="240" />
+              <line x1="140" y1="20" x2="140" y2="240" />
+              <line x1="220" y1="20" x2="220" y2="240" />
+              <line x1="300" y1="20" x2="300" y2="240" />
+              <line x1="380" y1="20" x2="380" y2="240" />
+              <line x1="20" y1="60" x2="400" y2="60" />
+              <line x1="20" y1="130" x2="400" y2="130" />
+              <line x1="20" y1="200" x2="400" y2="200" />
+            </g>
+
+            <!-- Legacy Piecewise PID Point-to-Point Path -->
+            <polyline
+              points="46,205 118,82 214,174 306,64 374,142"
+              fill="none"
+              stroke="var(--ink-muted)"
+              stroke-width="1.6"
+              stroke-dasharray="5 5"
+              stroke-opacity="0.7"
+            />
+
+            <!-- Smooth Optimized Minimum-Time Spline Trajectory -->
+            <path
+              d="M 46,205 C 62,140 82,70 118,82 C 154,94 176,184 214,174 C 252,164 268,60 306,64 C 338,68 358,112 374,142"
+              fill="none"
+              stroke="var(--accent)"
+              stroke-width="2.75"
+              stroke-linecap="round"
+            />
+
+            <!-- Waypoints -->
+            <g fill="var(--bg-elevated)" stroke="var(--gold)" stroke-width="2.2">
+              <circle cx="46" cy="205" r="5.5" />
+              <circle cx="118" cy="82" r="5.5" />
+              <circle cx="214" cy="174" r="5.5" />
+              <circle cx="306" cy="64" r="5.5" />
+              <circle cx="374" cy="142" r="5.5" />
+            </g>
+
+            <!-- Waypoint Labels -->
+            <g
+              font-family="JetBrains Mono, monospace"
+              font-size="10"
+              fill="var(--ink-muted)"
+            >
+              <text x="34" y="226">WP0</text>
+              <text x="106" y="66">WP1</text>
+              <text x="202" y="196">WP2</text>
+              <text x="294" y="48">WP3</text>
+              <text x="358" y="164">WP4</text>
+            </g>
+          </svg>
+          <div class="visual-legend">
+            <span class="legend-item">
+              <span class="legend-line opt" aria-hidden="true"></span>
+              Optimized trajectory
+            </span>
+            <span class="legend-item">
+              <span class="legend-line pid" aria-hidden="true"></span>
+              Baseline PID point-to-point
+            </span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="section-kicker">Academic Background</span>
+            <h2 class="section-title">Education</h2>
+          </div>
+        </div>
+
+        <article class="edu-card">
+          <div class="edu-top">
+            <div>
+              <h3 class="edu-school">University of California, Berkeley</h3>
+              <p class="edu-degree">B.A. in Data Science</p>
+            </div>
+            <div class="edu-meta">
+              <strong>Expected May 2030</strong>
+              <span>Berkeley, CA</span>
+            </div>
+          </div>
+
+          <p class="coursework-label">Relevant Coursework &mdash; Fall 2026</p>
+          <div class="course-grid">
+            <div class="course-item">
+              <span class="course-code">DATA C8</span>
+              <span class="course-name">Foundations of Data Science</span>
+            </div>
+            <div class="course-item">
+              <span class="course-code">COMPSCI 61A</span>
+              <span class="course-name">The Structure and Interpretation of Computer Programs</span>
+            </div>
+            <div class="course-item">
+              <span class="course-code">INTEGBI 43</span>
+              <span class="course-name">What Lives Inside Us? Microbiomes and Symbiosis</span>
+            </div>
+            <div class="course-item">
+              <span class="course-code">HUM 10</span>
+              <span class="course-name">AI and Writing</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Technical & Research Experience -->
+    <section class="section" id="research">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="section-kicker">Quantitative &amp; Engineering Work</span>
+            <h2 class="section-title">Technical &amp; Research Experience</h2>
+          </div>
+          <p class="section-note">Robotics, statistical modeling &amp; computational biology</p>
+        </div>
+
+        <div class="experience-list">
+          <article class="exp-card">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-title">UAVs@Berkeley</h3>
+                <p class="exp-role">Member</p>
+              </div>
+              <div class="exp-meta">
+                <span class="exp-date">Sep 2026 &ndash; Present</span>
+                <span>Berkeley, CA</span>
+              </div>
+            </div>
+            <ul class="exp-bullets">
+              <li>
+                Developing trajectory optimization algorithms for the C-UASC competition,
+                minimizing flight times between waypoints and improving upon past PID
+                point-to-point methods previously used.
+              </li>
+            </ul>
+            <div class="tag-row">
+              <span class="tag">Trajectory Optimization</span>
+              <span class="tag">Autonomous UAVs</span>
+              <span class="tag">C-UASC</span>
+            </div>
+          </article>
+
+          <article class="exp-card">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-title">Data Science Academy, University of Pennsylvania Global Youth Program</h3>
+                <p class="exp-role">Student Researcher</p>
+              </div>
+              <div class="exp-meta">
+                <span class="exp-date">Summer 2025</span>
+              </div>
+            </div>
+            <ul class="exp-bullets">
+              <li>
+                Developed a 3-state Markov Switching model as a capstone team project to
+                analyze U.S. housing bubbles, and presented findings to faculty and peers.
+              </li>
+            </ul>
+            <div class="tag-row">
+              <span class="tag">Markov Switching Models</span>
+              <span class="tag">Time Series</span>
+              <span class="tag">Statistical Modeling</span>
+            </div>
+          </article>
+
+          <article class="exp-card">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-title">AlphaFold Research Program, UC Berkeley</h3>
+                <p class="exp-role">Student Researcher &middot; Advisor: Prof. Wenjun Zhang (Biomolecular Engineering)</p>
+              </div>
+              <div class="exp-meta">
+                <span class="exp-date">Summer 2024</span>
+                <span>Berkeley, CA</span>
+              </div>
+            </div>
+            <ul class="exp-bullets">
+              <li>
+                Conducted research under Prof. Wenjun Zhang (Biomolecular Engineering),
+                studying AlphaFold3 papers, tutorials, and modeling workflows.
+              </li>
+              <li>
+                Generated predicted protein structures with AlphaFold3 and compared them
+                against experimental structures using PyMOL.
+              </li>
+            </ul>
+            <div class="tag-row">
+              <span class="tag">AlphaFold3</span>
+              <span class="tag">PyMOL</span>
+              <span class="tag">Computational Biology</span>
+            </div>
+          </article>
+
+          <article class="exp-card">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-title">SHAPE (Summer High School Academic Program for Engineers), Columbia University</h3>
+                <p class="exp-role">Participant</p>
+              </div>
+              <div class="exp-meta">
+                <span class="exp-date">Summer 2024</span>
+              </div>
+            </div>
+            <ul class="exp-bullets">
+              <li>
+                Completed the &ldquo;How (Not) To Bet: Demystifying Probability&rdquo; track
+                and Machine Learning elective, covering the law of large numbers, central
+                limit theorem, statistical modeling, and hypothesis testing.
+              </li>
+              <li>
+                Collaborated with a team to design and present a solution to the stochastic
+                knapsack problem at the program symposium.
+              </li>
+            </ul>
+            <div class="tag-row">
+              <span class="tag">Probability Theory</span>
+              <span class="tag">Stochastic Optimization</span>
+              <span class="tag">Machine Learning</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leadership & Teaching Experience -->
+    <section class="section" id="leadership">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="section-kicker">Mentorship &amp; Organization</span>
+            <h2 class="section-title">Leadership &amp; Teaching Experience</h2>
+          </div>
+        </div>
+
+        <div class="cards-grid">
+          <article class="grid-card">
+            <div class="grid-card-top">
+              <h3 class="grid-card-title">Robotics Team 9400</h3>
+              <span class="grid-card-date">Oct 2023 &ndash; May 2026</span>
+            </div>
+            <p class="grid-card-sub">Co-President &amp; Software Co-Captain</p>
+            <ul class="exp-bullets">
+              <li>
+                Led software engineering efforts, focusing on autonomous routines and
+                vision systems.
+              </li>
+              <li>
+                Served as Chief Technology Officer (CTO) for the team&rsquo;s affiliated
+                nonprofit, Silicon Valley Youth Robotics Foundation.
+              </li>
+            </ul>
+            <span class="grid-card-location">San Jose, CA</span>
+          </article>
+
+          <article class="grid-card">
+            <div class="grid-card-top">
+              <h3 class="grid-card-title">Data Science Club, Palo Alto High School</h3>
+              <span class="grid-card-date">Aug 2024 &ndash; May 2026</span>
+            </div>
+            <p class="grid-card-sub">Co-Founder &amp; Co-President</p>
+            <ul class="exp-bullets">
+              <li>
+                Delivered weekly lectures on core data science concepts, including causal
+                inference.
+              </li>
+              <li>
+                Organized hands-on projects to practice applied data science, including a
+                2024 election prediction project.
+              </li>
+            </ul>
+            <span class="grid-card-location">Palo Alto, CA</span>
+          </article>
+
+          <article class="grid-card">
+            <div class="grid-card-top">
+              <h3 class="grid-card-title">AP Physics C, Palo Alto High School</h3>
+              <span class="grid-card-date">Sep 2025 &ndash; May 2026</span>
+            </div>
+            <p class="grid-card-sub">Teaching Assistant</p>
+            <ul class="exp-bullets">
+              <li>
+                Assisted the instructor with grading homework and laboratory assignments
+                and answering students&rsquo; questions during class.
+              </li>
+            </ul>
+            <span class="grid-card-location">Palo Alto, CA</span>
+          </article>
+
+          <article class="grid-card">
+            <div class="grid-card-top">
+              <h3 class="grid-card-title">AI Club, Palo Alto High School</h3>
+              <span class="grid-card-date">Aug 2023 &ndash; Jun 2024</span>
+            </div>
+            <p class="grid-card-sub">SVP of Marketing</p>
+            <ul class="exp-bullets">
+              <li>
+                Led club outreach, promotional efforts, and member recruitment.
+              </li>
+            </ul>
+            <span class="grid-card-location">Palo Alto, CA</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Community Service, Athletics & Music -->
+    <section class="section" id="community">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="section-kicker">Service &amp; Beyond the Classroom</span>
+            <h2 class="section-title">Community Service &amp; Activities</h2>
+          </div>
+        </div>
+
+        <div class="community-layout">
+          <div class="service-list">
+            <article class="service-item">
+              <div class="service-top">
+                <h3 class="service-org">People, Plates, Planet</h3>
+                <span class="service-date">Aug 2022 &ndash; Aug 2025 &middot; Palo Alto, CA</span>
+              </div>
+              <p class="service-role">Co-President</p>
+              <p class="service-desc">
+                Personally collected over <span class="highlight-stat">600 lbs</span> of
+                surplus, intact food and organized food-waste awareness events; recruited
+                volunteers locally and across neighboring high schools.
+              </p>
+            </article>
+
+            <article class="service-item">
+              <div class="service-top">
+                <h3 class="service-org">Palo Alto High School Instrumental Music Boosters</h3>
+                <span class="service-date">Oct 2022 &ndash; Jun 2026 &middot; Palo Alto, CA</span>
+              </div>
+              <p class="service-role">Volunteer Fundraiser</p>
+              <p class="service-desc">
+                Helped raise approximately <span class="highlight-stat">$15,000</span> to
+                support <span class="highlight-stat">150&ndash;200 students</span> in the
+                school&rsquo;s Instrumental Music program.
+              </p>
+            </article>
+
+            <article class="service-item">
+              <div class="service-top">
+                <h3 class="service-org">Tower Learning Center, Palo Alto High School</h3>
+                <span class="service-date">Aug 2024 &ndash; May 2026 &middot; Palo Alto, CA</span>
+              </div>
+              <p class="service-role">Peer Tutor</p>
+              <p class="service-desc">
+                Tutored <span class="highlight-stat">6 high school students</span> in
+                physics, mathematics, and related subjects.
+              </p>
+            </article>
+
+            <article class="service-item">
+              <div class="service-top">
+                <h3 class="service-org">Youth Community Service</h3>
+                <span class="service-date">Jun 2023 &ndash; Jul 2023 &middot; Palo Alto, CA</span>
+              </div>
+              <p class="service-role">Service &amp; Community Event Intern</p>
+              <p class="service-desc">
+                Designed and planned community service projects, pitched proposals to
+                partner nonprofits, and strengthened public speaking and messaging skills.
+              </p>
+            </article>
+          </div>
+
+          <aside class="beyond-card" aria-label="Athletics and Music">
+            <h3 class="beyond-title">Athletics &amp; Music</h3>
+
+            <div class="beyond-item">
+              <p class="beyond-label">Competitive Swimming</p>
+              <p class="beyond-text">
+                Varsity Team, Palo Alto Stanford Aquatics (Sep 2021 &ndash; Feb 2022,
+                Feb 2023 &ndash; Jun 2026); Junior Varsity Team, Palo Alto High School
+                (2022 &ndash; 2023).
+              </p>
+            </div>
+
+            <div class="beyond-item">
+              <p class="beyond-label">Golden State Youth Orchestra</p>
+              <p class="beyond-text">
+                First Violin, Galbraith Honor Strings (2023 &ndash; 2024) and Camerata
+                Orchestra (2022 &ndash; 2023).
+              </p>
+            </div>
+
+            <div class="beyond-item">
+              <p class="beyond-label">Piano</p>
+              <p class="beyond-text">
+                Level 7, Music Teachers&rsquo; Association of California (2024).
+              </p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="section-kicker">Technical Toolkit</span>
+            <h2 class="section-title">Skills</h2>
+          </div>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3 class="skill-group-title">Programming Languages</h3>
+            <div class="skill-pills">
+              <span class="skill-pill">Python</span>
+              <span class="skill-pill">C++</span>
+              <span class="skill-pill">Java</span>
+              <span class="skill-pill">R</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Tools &amp; Libraries</h3>
+            <div class="skill-pills">
+              <span class="skill-pill">PyMOL</span>
+              <span class="skill-pill">AlphaFold3</span>
+              <span class="skill-pill">NumPy</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Spoken Languages</h3>
+            <div class="skill-pills">
+              <span class="skill-pill">Chinese</span>
+              <span class="skill-pill">Spanish</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI Use Disclosure Section -->
+    <section class="section" id="ai-disclosure">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="section-kicker">Transparency Statement</span>
+            <h2 class="section-title">AI Use Disclosure</h2>
+          </div>
+        </div>
+
+        <article class="disclosure-card">
+          <div class="disclosure-header">
+            <h3 class="disclosure-title">How Generative AI Was Used on This Site</h3>
+            <span class="disclosure-badge">AI-Assisted Web Development</span>
+          </div>
+
+          <p class="disclosure-lead">
+            In the interest of transparency and responsible academic and technical practice,
+            the design and front-end code for this personal website were created with the
+            assistance of an AI coding assistant (Google Antigravity) using my personal
+            resume as the sole source of biographical and project information.
+          </p>
+
+          <div class="disclosure-columns">
+            <div class="disclosure-box">
+              <h3>AI-Assisted Elements</h3>
+              <ul>
+                <li>Page layout, semantic HTML structure, and responsive CSS styling.</li>
+                <li>Light/dark theme toggle, accessible navigation, and print stylesheet.</li>
+                <li>Decorative SVG waypoint trajectory diagram in the hero section.</li>
+                <li>Formatting and organizing resume entries for web readability.</li>
+              </ul>
+            </div>
+
+            <div class="disclosure-box">
+              <h3>Human Authorship &amp; Verification</h3>
+              <ul>
+                <li>All academic, research, leadership, service, and skill details originate from Aiden Shi&rsquo;s own resume and experiences.</li>
+                <li>No experiences, metrics, projects, or qualifications were invented or fabricated by AI.</li>
+                <li>Aiden Shi retains editorial responsibility for reviewing, verifying, and maintaining all published content.</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="disclosure-footnote">
+            Last updated: November 2026 &middot; Tooling: Google Antigravity (Gemini)
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer & Contact -->
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h2 class="footer-heading">Let&rsquo;s Connect</h2>
+          <p class="footer-sub">
+            Open to conversations about data science, robotics, autonomous systems,
+            computational biology, and research collaborations.
+          </p>
+        </div>
+
+        <ul class="contact-links">
+          <li>
+            <a href="mailto:shiaiden@gmail.com">shiaiden@gmail.com</a>
+          </li>
+          <li>
+            <a href="tel:+16506844844">(650) 684-4844</a>
+          </li>
+          <li>
+            <a href="https://github.com/aiden9400" target="_blank" rel="noopener noreferrer">
+              github.com/aiden9400
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/aiden-shi-44a15243b/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 Aiden Shi &middot; Berkeley, CA</span>
+        <a href="#ai-disclosure">AI Use Disclosure</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      const root = document.documentElement;
+      const themeToggle = document.getElementById("theme-toggle");
+      const iconMoon = document.getElementById("icon-moon");
+      const iconSun = document.getElementById("icon-sun");
+
+      function applyTheme(theme) {
+        if (theme === "dark") {
+          root.setAttribute("data-theme", "dark");
+          iconMoon.style.display = "none";
+          iconSun.style.display = "block";
+        } else {
+          root.removeAttribute("data-theme");
+          iconMoon.style.display = "block";
+          iconSun.style.display = "none";
+        }
+      }
+
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme) {
+        applyTheme(savedTheme);
+      } else if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        applyTheme("dark");
+      }
+
+      themeToggle.addEventListener("click", function () {
+        const isDark = root.getAttribute("data-theme") === "dark";
+        const nextTheme = isDark ? "light" : "dark";
+        applyTheme(nextTheme);
+        localStorage.setItem("theme", nextTheme);
+      });
+
+      // Mobile navigation toggle
+      const menuToggle = document.getElementById("menu-toggle");
+      const navLinks = document.getElementById("nav-links");
+
+      menuToggle.addEventListener("click", function () {
+        const isOpen = navLinks.classList.toggle("open");
+        menuToggle.setAttribute("aria-expanded", String(isOpen));
+      });
+
+      navLinks.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", function () {
+          navLinks.classList.remove("open");
+          menuToggle.setAttribute("aria-expanded", "false");
+        });
+      });
+
+      // Highlight active navigation link on scroll
+      const sections = document.querySelectorAll("main section[id]");
+      const navAnchors = document.querySelectorAll(".nav-links a");
+
+      if ("IntersectionObserver" in window) {
+        const observer = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                const id = entry.target.getAttribute("id");
+                navAnchors.forEach(function (a) {
+                  a.classList.toggle("active", a.getAttribute("href") === "#" + id);
+                });
+              }
+            });
+          },
+          { rootMargin: "-35% 0px -55% 0px" }
+        );
+
+        sections.forEach(function (sec) {
+          observer.observe(sec);
+        });
+      }
+    })();
+  </script>
+</body>
 </html>
